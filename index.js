@@ -15,7 +15,7 @@ if (!fs.existsSync(outputFolder)) {
 // list of images from source folder
 fs.readdir(inputFolder, (err, files) => {
     if (err) {
-        console.error('Ошибка чтения папки:', err);
+        console.error('Error - Unable to read source folder:', err);
         return;
     }
 
@@ -31,19 +31,19 @@ fs.readdir(inputFolder, (err, files) => {
         sharp(filePath)
             .jpeg()
             .toFile(path.join(outputFolder, `${fileName}.jpg`))
-            .then(() => console.log(`${file} конвертирован в JPG`))
-            .catch(err => console.error('Ошибка конвертации в JPG:', err));
+            .then(() => console.log(`${file} converted in JPG`))
+            .catch(err => console.error('Error - Conversion to JPG failed:', err));
         // convert to WebP
         sharp(filePath)
             .webp()
             .toFile(path.join(outputFolder, `${fileName}.webp`))
-            .then(() => console.log(`${file} конвертирован в WebP`))
-            .catch(err => console.error('Ошибка конвертации в WebP:', err));
+            .then(() => console.log(`${file} converted in WebP`))
+            .catch(err => console.error('Error - Conversion to WEBP failed:', err));
         // convert to AVIF
         sharp(filePath)
             .avif()
             .toFile(path.join(outputFolder, `${fileName}.avif`))
-            .then(() => console.log(`${file} конвертирован в AVIF`))
-            .catch(err => console.error('Ошибка конвертации в AVIF:', err));
+            .then(() => console.log(`${file} converted in AVIF`))
+            .catch(err => console.error('Error - Conversion to AVIF failed:', err));
     });
 });
