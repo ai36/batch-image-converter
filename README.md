@@ -1,11 +1,11 @@
 # batch-image-converter
 convert png>(jpg,webp,avif)
 
-##Вefore Running:
+## Вefore Running:
 
 ```npm install```
 
-##Running:
+## Running:
 
 ```node index.js```
 
