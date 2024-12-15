@@ -18,11 +18,11 @@ No frills or extra features here. I made it purely for my own use.
 Put the **PNG** images to source folder:
 
 Source folder: src/img<br>
-Source format - **PNG**
+Source images format - **PNG**
 
 Get the converted images from destination folder:
 
 Destination folder: dist/img<br>
-Destination formats - **JPG**, **WEBP**, **AVIF**
+Destination images formats - **JPG**, **WEBP**, **AVIF**
 
 The filename does not change. The resolution does not change. All settings are default.
