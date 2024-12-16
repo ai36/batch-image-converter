@@ -7,11 +7,11 @@ No frills or extra features here. I made it purely for my own use.
 
 ## Вefore Running
 
-```npm install```
+`npm install`
 
 ## Running
 
-```node index.js```
+`node index.js`
 
 ## How to use
 
